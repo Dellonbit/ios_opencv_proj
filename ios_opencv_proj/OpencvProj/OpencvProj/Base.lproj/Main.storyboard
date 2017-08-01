@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Haw-bA-Gqv">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="OpencvProj" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="renganathan_sa_1.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="blF-Hl-fF8">
+                                <rect key="frame" x="31" y="91" width="312" height="486"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="486" id="ITI-IF-fpX"/>
+                                    <constraint firstAttribute="width" constant="312" id="cOx-Br-R5p"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="blF-Hl-fF8" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="WSq-l0-1Qw"/>
+                            <constraint firstItem="blF-Hl-fF8" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ofC-hW-FmS"/>
+                        </constraints>
+                    </view>
+                    <toolbarItems>
+                        <barButtonItem systemItem="organize" id="XW8-6N-pz3">
+                            <connections>
+                                <action selector="openFolder:" destination="BYZ-38-t0r" id="eBz-e5-t7h"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="cS1-gy-aV3"/>
+                        <barButtonItem image="Horiz_.png" id="sZS-T4-79h" userLabel="equalize">
+                            <connections>
+                                <action selector="equalize:" destination="BYZ-38-t0r" id="hI9-nb-rCG"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="KkM-50-pYn"/>
+                        <barButtonItem systemItem="camera" id="iWH-zi-E44">
+                            <connections>
+                                <action selector="openCamera:" destination="BYZ-38-t0r" id="48v-M4-iP1"/>
+                            </connections>
+                        </barButtonItem>
+                    </toolbarItems>
+                    <navigationItem key="navigationItem" id="JkH-5p-TOM">
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="6cW-BU-s0G">
+                            <connections>
+                                <action selector="saveImage:" destination="BYZ-38-t0r" id="i5a-h9-4vI"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="img" destination="blF-Hl-fF8" id="kZb-QG-QhQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1029.5999999999999" y="26.53673163418291"/>
+        </scene>
+        <!--Item 2-->
+        <scene sceneID="UQa-bG-WKP">
+            <objects>
+                <viewController id="fgK-5J-otL" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item 2" id="Jaz-tY-hEA"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vZA-Oz-Q8M" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2215.1999999999998" y="545.57721139430294"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="9ks-x9-dem">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" toolbarHidden="NO" id="Haw-bA-Gqv" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="9Er-2O-Jxa">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="45J-IJ-O7Z">
+                        <rect key="frame" x="0.0" y="623" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="barTintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    </toolbar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="4D5-nM-VNn"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2f1-jp-yum" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="90.400000000000006" y="26.53673163418291"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Horiz_.png" width="25" height="25"/>
+        <image name="renganathan_sa_1.jpg" width="720" height="480"/>
+    </resources>
+</document>
